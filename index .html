@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chess Game</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+   <div class="container">
+      <p id="chess"> PLAY CHESS</p>
+      <div class="user">
+         <div class="user-one user" id="userOne">
+            <img class="userImage " src="user.png" alt="">
+            <h2>player one</h2>
+            <p id="player-one-name">Name:</p>
+            <p id="player-one-winner">Winner: </p>
+         </div>
+         <div class="user-second user" id="userSecond">
+            <img class="userImage" src="user.png" alt="">
+            <h2>Player Two</h2>
+            <p id="player-two=-name">Name:</p>
+            <p id="player-two-winner">Winer</p>
+         </div>
+      </div>
+
+
+      <div class="chessBoard">
+         <div class="col1 col">
+            <div class="col-box-odd box" id="col1-box1" ">
+                    
+               <div class="chess-key elephant1" id="elephant-one-col1">&#9820;</div>
+
+            </div>
+            <div class="col-box-odd box" id="col1-box2">
+               <div class="chess-key horse1" id="horse-1-1">&#9822;</div>
+            </div>
+            <div class="col-box-odd box" id="col1-box3">
+               <div class="chess-key" id="camel-1-1">&#9821;</div>
+            </div>
+            <div class="col-box-odd box" id="col1-box4">
+               <div class="chess-key" id="queen-1-1">&#9819;</div>
+            </div>
+            <div class="col-box-odd box" id="col1-box5">
+               <div class="chess-key" id="king-1-1">&#9818;</div>
+            </div>
+            <div class="col-box-odd box" id="col1-box6">
+               <div class="chess-key" id="camel-2-1">&#9821;</div>
+            </div>
+            <div class="col-box-odd box" id="col1-box7">
+               <div class="chess-key horse1" id="horse-2-1">&#9822;</div>
+            </div>
+            <div class="col-box-odd box" id="col1-box8">
+               <div class="chess-key elephant1"  id="elephant-2-1">&#9820;</div>
+            </div>
+         </div>
+         <div class="col2 col" id="col2">
+            <div class="col-box-even box" id="col2-box1">
+               <!-- id = "pawn-num-col" -->
+               <div class="chess-key pawn-green" id="pawn-1-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box2">
+               <div class="chess-key pawn-green" id="pawn-2-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box3">
+               <div class="chess-key pawn-green" id="pawn-3-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box4">
+               <div class="chess-key pawn-green"
+                  id="pawn-4-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box5">
+               <div class="chess-key pawn-green" id="pawn-5-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box6">
+               <div class="chess-key pawn-green" id="pawn-6-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box7">
+               <div class="chess-key pawn-green" id="pawn-7-2">&#9823;</div>
+            </div>
+            <div class="col-box-even box" id="col2-box8">
+               <div class="chess-key pawn-green " id="pawn-8-2">&#9823;</div>
+            </div>
+         </div>
+         <div class="col3 col" id="col3">
+            <div class="col-box-odd box" id="col3-box1"> 
+               <div class="chess-key" id="col3-box1-key"></div>
+            </div>
+            <div class="col-box-odd box" id="col3-box2"> </div>
+            <div class="col-box-odd box" id="col3-box3"> </div>
+            <div class="col-box-odd box" id="col3-box4"> </div>
+            <div class="col-box-odd box" id="col3-box5"> </div>
+            <div class="col-box-odd box" id="col3-box6"> </div>
+            <div class="col-box-odd box" id="col3-box7"> </div>
+            <div class="col-box-odd box" id="col3-box8"> </div>
+         </div>
+         <div class="col4 col" id="col4">
+            <div class="col-box-even box" id="col4-box1">
+               <div class="chess-key" id="col4-box1-key"></div> </div>
+            <div class="col-box-even box" id="col4-box2"> </div>
+            <div class="col-box-even box" id="col4-box3"> </div>
+            <div class="col-box-even box" id="col4-box4"> </div>
+            <div class="col-box-even box" id="col4-box5"> </div>
+            <div class="col-box-even box" id="col4-box6"> </div>
+            <div class="col-box-even box" id="col4-box7"> </div>
+            <div class="col-box-even box" id="col4-box8"> </div>
+         </div>
+         <div class="col5 col" id="col5">
+            <div class="col-box-odd box" id="col5-box1"></div>
+            <div class="col-box-odd box" id="col5-box2"></div>
+            <div class="col-box-odd box" id="col5-box3"></div>
+            <div class="col-box-odd box" id="col5-box4"></div>
+            <div class="col-box-odd box" id="col5-box5"></div>
+            <div class="col-box-odd box" id="col5-box6"></div>
+            <div class="col-box-odd box" id="col5-box7"></div>
+            <div class="col-box-odd box" id="col5-box8"></div>
+         </div>
+         <div class="col6 col" id="col6">
+            <div class="col-box-even box" id="col6-box1">
+               <div class="chess-key" id="col6-box1-keyasd"> </div>
+            </div>
+            <div class="col-box-even box" id="col6-box2"></div>
+            <div class="col-box-even box" id="col6-box3"></div>
+            <div class="col-box-even box" id="col6-box4"></div>
+            <div class="col-box-even box" id="col6-box5"></div>
+            <div class="col-box-even box" id="col6-box6"></div>
+            <div class="col-box-even box" id="col6-box7"></div>
+            <div class="col-box-even box" id="col6-box8"></div>
+         </div>
+         <div class="col7 col" id="col7">
+            <div class="col-box-odd box" id="col7-box1">
+               <div class="white-key pawn-blue" id="pawn-1-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box2">
+               <div class="white-key pawn-blue" id="pawn-2-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box3">
+               <div class="white-key pawn-blue" id="pawn-3-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box4">
+               <div class="white-key pawn-blue" id="pawn-4-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box5">
+               <div class="white-key pawn-blue" id="pawn-5-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box6">
+               <div class="white-key pawn-blue" id="pawn-6-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box7">
+               <div class="white-key pawn-blue" id="pawn-7-7">&#9817;</div>
+            </div>
+            <div class="col-box-odd box" id="col7-box8">
+               <div class="white-key pawn-blue" id="pawn-8-7">&#9817;</div>
+            </div>
+         </div>
+         <div class="col8 col" id="col8">
+            <div class="col-box-even box" id="col8-box1">
+               <div class="white-key" id="elephant-1-8">&#9814;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box2">
+               <div class="white-key horse2" id="horse-1-8">&#9816;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box3">
+               <div class="white-key" id="camel-3-col8">&#9815;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box4">
+               <div class="white-key" id="queen-8">&#9813;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box5">
+               <div class="white-key" id="king-8">&#9812;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box6">
+               <div class="white-key" id="camel-8">&#9815;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box7">
+               <div class="white-key horse2" id="horse-2-8">&#9816;</div>
+            </div>
+            <div class="col-box-even box" id="col8-box8">
+               <div class="white-key" id="elephant-two-col8">&#9814;</div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              

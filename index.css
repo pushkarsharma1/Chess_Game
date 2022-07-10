@@ -1,0 +1,83 @@
+body {
+    margin: 55px;
+    background-color: gray;
+}
+
+ .col{
+    display: flex;
+
+}
+.chessBoard {
+
+    margin-top: -300px;
+    text-align: center;
+    margin-left: 480px;
+  
+}
+
+
+.box {
+    display: inline-block;
+    border: 5px solid red;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    box-shadow: 5px 5px 5px;
+
+
+}
+
+.col-box-odd:nth-child(odd) {
+    background-color: black;
+}
+
+.col-box-odd:nth-child(even) {
+    background-color: white;
+}
+
+.col-box-even:nth-child(even) {
+    background-color: black;
+}
+
+.col-box-even:nth-child(odd) {
+    background-color: white;
+}
+
+.chess-key {
+    margin: auto;
+    text-align: center;
+    color: rgb(60, 128, 0);
+    font-size: 50px;
+    font-weight: bold;
+    /* visibility: hidden; */
+}
+
+.white-key {
+    margin: auto;
+    text-align: center;
+    font-size: 55px;
+    color: blue;
+    font-weight: bold;
+}
+
+.user{
+    display: inline-block;
+}
+
+.user-one{
+    float: left;
+    margin-left: 45px;
+    text-align: center;
+}
+.user-second{
+    text-align: center;
+    /* float: right; */
+    margin-left: 1350px;
+}
+.userImage{
+    border-radius: 50%;
+}
+#chess{
+    text-align: center;
+    font-size: 45px;
+}
