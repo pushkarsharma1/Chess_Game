@@ -231,3 +231,90 @@ function removeMovesHorseBlue(event) {
   }
 }
 // ----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//...pawn 2.......................................
+
+
+
+
+document.getElementById("col3-box2").addEventListener("click", myFunction);
+  document.getElementById("col4-box2").addEventListener("click",myFunction);
+  let m=1;
+  function myFunction(event){
+    let col3Box2Key=document.getElementById("col3-box2-key");
+    let col2box2Key = document.getElementById("pawn-2-2");
+    let col4Box2Key =document.getElementById("col4-box2-key")
+    let id=event.target.id;
+
+    console.log(col2box2Key, "------1---------------", id);
+
+    if(id=='col3-box2' && m==1){
+      m++;
+      console.log(col2box2Key, "------2---------------");
+    console.log(col3Box2Key.innerHTML, "64 line");
+    // [col2box1Key.innerHTML,col3Box1Key.innerHTML]=[col3Box1Key.innerHTML,col2box1Key.innerHTML];
+   [col3Box2Key.innerHTML,col2box2Key.innerHTML]=[col2box2Key.innerHTML,col3Box2Key.innerHTML];
+    }
+    // console.log(id, "------1---------------");
+
+
+  if(id=='col4-box2' && m==1){
+    m++;
+    console.log(col4Box2Key);
+    [col4Box2Key.innerHTML,col2box2Key.innerHTML]=[col2box2Key.innerHTML,col4Box2Key.innerHTML]
+  }
+  }
+
+
+
+
+
+  /////////////////////////////////
+
+
+  //////////pawn3...................
+
+
+  document.getElementById("col3-box3").addEventListener("click", myFunction);
+  document.getElementById("col4-box3").addEventListener("click",myFunction);
+  let n=1;
+  function myFunction(event){
+    let col3Box3Key=document.getElementById("col3-box3-key");
+    let col2box3Key = document.getElementById("pawn-3-2");
+    let col4Box3Key =document.getElementById("col4-box3-key")
+    let id=event.target.id;
+
+    console.log(col2box3Key, "------1---------------", id);
+
+    if(id=='col3-box3' && n==1){
+      n++;
+      console.log(col2box3Key, "------2---------------");
+    console.log(col3Box3Key.innerHTML, "64 line");
+    // [col2box1Key.innerHTML,col3Box1Key.innerHTML]=[col3Box1Key.innerHTML,col2box1Key.innerHTML];
+   [col3Box3Key.innerHTML,col2box3Key.innerHTML]=[col2box3Key.innerHTML,col3Box3Key.innerHTML];
+    }
+    // console.log(id, "------1---------------");
+
+
+  if(id=='col4-box3' && n==1){
+    n++;
+    console.log(col4Box3Key);
+    [col4Box3Key.innerHTML,col2box3Key.innerHTML]=[col2box3Key.innerHTML,col4Box3Key.innerHTML]
+  }
+  }
