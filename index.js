@@ -44,32 +44,84 @@ function removeMovesPawnGreen(event) {
   }
 }
 document.getElementById("col3-box1").addEventListener("click", myFunction);
-  document.getElementById("col4-box1").addEventListener("click",myFunction);
-  let l=1;
-  function myFunction(event){
-    let col3Box1Key=document.getElementById("col3-box1-key");
-    let col2box1Key = document.getElementById("pawn-1-2");
-    let col4Box1Key =document.getElementById("col4-box1-key")
-    let id=event.target.id;
+document.getElementById("col4-box1").addEventListener("click", myFunction);
+document.getElementById("col3-box4").addEventListener("click",myFunction);
+document.getElementById("col4-box4").addEventListener("click",myFunction);
+document.getElementById("col3-box5").addEventListener("click",myFunction);
+document.getElementById("col4-box5").addEventListener("click",myFunction);
+document.getElementById("col3-box6").addEventListener("click",myFunction);
+document.getElementById("col4-box6").addEventListener("click",myFunction);
+document.getElementById("col3-box7").addEventListener("click",myFunction);
+document.getElementById("col4-box7").addEventListener("click",myFunction);
+document.getElementById("col3-box8").addEventListener("click",myFunction);
+document.getElementById("col4-box8").addEventListener("click",myFunction);
 
-    console.log(col2box1Key, "------1---------------", id);
+let l = 1;
+function myFunction(event) {
+  let col3Box1Key = document.getElementById("col3-box1-key");
+  let col2box1Key = document.getElementById("pawn-1-2");
+  let col4Box1Key = document.getElementById("col4-box1-key")
+  let id = event.target.id;
 
-    if(id=='col3-box1' && l==1){
-      l++;
-      console.log(col2box1Key, "------2---------------");
+  console.log(col2box1Key, "------1---------------", id);
+
+  if (id == 'col3-box1' && l == 1) {
+    l++;
+    console.log(col2box1Key, "------2---------------");
     console.log(col3Box1Key.innerHTML, "64 line");
     // [col2box1Key.innerHTML,col3Box1Key.innerHTML]=[col3Box1Key.innerHTML,col2box1Key.innerHTML];
-   [col3Box1Key.innerHTML,col2box1Key.innerHTML]=[col2box1Key.innerHTML,col3Box1Key.innerHTML];
-    }
-    // console.log(id, "------1---------------");
+    [col3Box1Key.innerHTML, col2box1Key.innerHTML] = [col2box1Key.innerHTML, col3Box1Key.innerHTML];
+  }
+  // console.log(id, "------1---------------");
 
 
-  if(id=='col4-box1' && l==1){
+  if (id == 'col4-box1' && l == 1) {
     l++;
     console.log(col4Box1Key);
-    [col4Box1Key.innerHTML,col2box1Key.innerHTML]=[col2box1Key.innerHTML,col4Box1Key.innerHTML]
+    [col4Box1Key.innerHTML, col2box1Key.innerHTML] = [col2box1Key.innerHTML, col4Box1Key.innerHTML]
   }
+  // .........FOR 4TH  PAWN..............
+  let col2box4Key=document.getElementById("pawn-4-2");
+  let col3Box4key=document.getElementById("col3-box4-key");
+  let col4Box4key=document.getElementById("col4-box4-key");
+  if(id=="col3-box4"){
+    [col3Box4key.innerHTML,col2box4Key.innerHTML]=[col2box4Key.innerHTML,col3Box4key.innerHTML];  
   }
+  // if(id=="col4-box4"){
+  //   [col4Box4Key.innerHTML, col2box4Key.innerHTML] = [col2box4Key.innerHTML, col4Box4Key.innerHTML]
+  // }
+// .......FOR 5TH PAWN...........
+let col2box5Key=document.getElementById("pawn-5-2");
+let col3Box5key=document.getElementById("col3-box5-key");
+let col4Box5key=document.getElementById("col4-box5-key");
+if(id=="col3-box5"){
+  [col3Box5key.innerHTML,col2box5Key.innerHTML]=[col2box5Key.innerHTML,col3Box5key.innerHTML];  
+}
+// .......FOR 6TH PAWN...........
+let col2box6Key=document.getElementById("pawn-6-2");
+let col3Box6key=document.getElementById("col3-box6-key");
+let col4Box6key=document.getElementById("col4-box6-key");
+if(id=="col3-box6"){
+  [col3Box6key.innerHTML,col2box6Key.innerHTML]=[col2box6Key.innerHTML,col3Box6key.innerHTML];  
+}
+
+// .......FOR 7TH PAWN...........
+let col2box7Key=document.getElementById("pawn-7-2");
+let col3Box7key=document.getElementById("col3-box7-key");
+let col4Box7key=document.getElementById("col4-box7-key");
+if(id=="col3-box7"){
+  [col3Box7key.innerHTML,col2box7Key.innerHTML]=[col2box7Key.innerHTML,col3Box7key.innerHTML];  
+}
+// //////.....FOR 8TH PAWN......
+let col2box8Key=document.getElementById("pawn-8-2");
+let col3Box8key=document.getElementById("col3-box8-key");
+let col4Box8key=document.getElementById("col4-box8-key");
+if(id=="col3-box8"){
+  [col3Box8key.innerHTML,col2box8Key.innerHTML]=[col2box8Key.innerHTML,col3Box8key.innerHTML];  
+}
+
+
+}
 //----------------------------------------------------------
 Array.from(document.getElementsByClassName("horse1")).forEach((elemm) => {
   elemm.addEventListener("mouseenter", showMoveshorseGreen);
@@ -89,14 +141,14 @@ function showMoveshorseGreen(event) {
     document.getElementById(
       `col${colNum + 2}-box${Num}`
     ).style.backgroundColor = "yellow";
-    
+
     document.getElementById(
       `col${colNum + 2}-box${Num + 2}`
     ).style.backgroundColor = "yellow";
   }
   if (id == "horse-2-1") {
     document.getElementById(`col${colNum + 1}-box${Num + 4}`).style.backgroundColor = "yellow";
-    console.log(colNum+1,Num+4);
+    console.log(colNum + 1, Num + 4);
     document.getElementById(
       `col${colNum + 1}-box${Num + 6}`
     ).style.backgroundColor = "yellow";
@@ -253,68 +305,64 @@ function removeMovesHorseBlue(event) {
 
 
 
-document.getElementById("col3-box2").addEventListener("click", myFunction);
-  document.getElementById("col4-box2").addEventListener("click",myFunction);
-  let m=1;
-  function myFunction(event){
-    let col3Box2Key=document.getElementById("col3-box2-key");
-    let col2box2Key = document.getElementById("pawn-2-2");
-    let col4Box2Key =document.getElementById("col4-box2-key")
-    let id=event.target.id;
+document.getElementById("col3-box2").addEventListener("click", myFunctionB);
+document.getElementById("col4-box2").addEventListener("click", myFunctionB);
+let m = 1;
+function myFunctionB(event) {
+  let col3Box2Key = document.getElementById("col3-box2-key");
+  let col2box2Key = document.getElementById("pawn-2-2");
+  let col4Box2Key = document.getElementById("col4-box2-key")
+  let id = event.target.id;
 
-    console.log(col2box2Key, "------1---------------", id);
+  console.log(col2box2Key, "------1---------------", id);
 
-    if(id=='col3-box2' && m==1){
-      m++;
-      console.log(col2box2Key, "------2---------------");
+  if (id == 'col3-box2' && m == 1) {
+    m++;
+    console.log(col2box2Key, "------2---------------");
     console.log(col3Box2Key.innerHTML, "64 line");
     // [col2box1Key.innerHTML,col3Box1Key.innerHTML]=[col3Box1Key.innerHTML,col2box1Key.innerHTML];
-   [col3Box2Key.innerHTML,col2box2Key.innerHTML]=[col2box2Key.innerHTML,col3Box2Key.innerHTML];
-    }
-    // console.log(id, "------1---------------");
+    [col3Box2Key.innerHTML, col2box2Key.innerHTML] = [col2box2Key.innerHTML, col3Box2Key.innerHTML];
+  }
+  // console.log(id, "------1---------------");
 
 
-  if(id=='col4-box2' && m==1){
+  if (id == 'col4-box2' && m == 1) {
     m++;
     console.log(col4Box2Key);
-    [col4Box2Key.innerHTML,col2box2Key.innerHTML]=[col2box2Key.innerHTML,col4Box2Key.innerHTML]
+    [col4Box2Key.innerHTML, col2box2Key.innerHTML] = [col2box2Key.innerHTML, col4Box2Key.innerHTML]
   }
-  }
+}
 
 
 
 
 
-  /////////////////////////////////
+/////////////////////////////////
 
 
-  //////////pawn3...................
+//////////pawn3...................
 
 
-  document.getElementById("col3-box3").addEventListener("click", myFunction);
-  document.getElementById("col4-box3").addEventListener("click",myFunction);
-  let n=1;
-  function myFunction(event){
-    let col3Box3Key=document.getElementById("col3-box3-key");
-    let col2box3Key = document.getElementById("pawn-3-2");
-    let col4Box3Key =document.getElementById("col4-box3-key")
-    let id=event.target.id;
+document.getElementById("col3-box3").addEventListener("click", myFunctions);
+document.getElementById("col4-box3").addEventListener("click", myFunctions);
+let n = 1;
+function myFunctions(event) {
+  let col3Box3Key = document.getElementById("col3-box3-key");
+  let col2box3Key = document.getElementById("pawn-3-2");
+  let col4Box3Key = document.getElementById("col4-box3-key")
+  let id = event.target.id;
 
-    console.log(col2box3Key, "------1---------------", id);
+  console.log(col2box3Key, "------1---------------", id);
 
-    if(id=='col3-box3' && n==1){
-      n++;
-      console.log(col2box3Key, "------2---------------");
+  if (id == 'col3-box3' && n == 1) {
+    n++;
+    console.log(col2box3Key, "------2---------------");
     console.log(col3Box3Key.innerHTML, "64 line");
-    // [col2box1Key.innerHTML,col3Box1Key.innerHTML]=[col3Box1Key.innerHTML,col2box1Key.innerHTML];
-   [col3Box3Key.innerHTML,col2box3Key.innerHTML]=[col2box3Key.innerHTML,col3Box3Key.innerHTML];
-    }
-    // console.log(id, "------1---------------");
-
-
-  if(id=='col4-box3' && n==1){
+    [col3Box3Key.innerHTML, col2box3Key.innerHTML] = [col2box3Key.innerHTML, col3Box3Key.innerHTML];
+  }
+  if (id == 'col4-box3' && n == 1) {
     n++;
     console.log(col4Box3Key);
-    [col4Box3Key.innerHTML,col2box3Key.innerHTML]=[col2box3Key.innerHTML,col4Box3Key.innerHTML]
+    [col4Box3Key.innerHTML, col2box3Key.innerHTML] = [col2box3Key.innerHTML, col4Box3Key.innerHTML]
   }
-  }
+}
