@@ -1,6 +1,6 @@
 let a=new Array(9);
  for(let i=0;i<a.length;i++){
-   a[i]=new Array(9);
+   a[i ]=new Array(9);
 }
 
 for(let i=1;i<=8;i++){
@@ -12,5 +12,5 @@ for(let i=1;i<=8;i++){
   }
   
   
-//   console.log(a[i]);
+  // console.log(a[i]);
 }
